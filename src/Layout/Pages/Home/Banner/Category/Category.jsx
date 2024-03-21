@@ -1,9 +1,14 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SectionTitle from '../../../../../Components/SectionTitle';
 const Category = () => {
     return (
-        <Swiper
+        <section>
+            <SectionTitle
+            heading={'Order Online'}
+            subHeading={'---From 11:00am to 10:00pm---'}></SectionTitle>
+            <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={3}
@@ -28,6 +33,7 @@ const Category = () => {
             <SwiperSlide>Slide 4</SwiperSlide>
             <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper>
+        </section>
     );
 };
 
